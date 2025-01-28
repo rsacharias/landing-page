@@ -45,17 +45,14 @@ button {
 }
 
 .navbar {
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 20px;
+    padding: 12px 0;
 }
 
 .logo {
     font-size: 24px;
-}
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    padding: 12px 0;
 }
 
 .navbar > ul {
@@ -71,14 +68,9 @@ button {
 
 .heading {
     display: flex;
-    /* for the image to schrink --> stretch is the default */
+    /* in order to get the image to schrink --> stretch is the default */
     align-items: flex-start;
     gap: 50px;
-}
-
-.title {
-    display: flex;
-    flex-direction: column;
 }
 
 .title > h1 {
@@ -91,23 +83,18 @@ button {
     margin-bottom: 12px;
 }
 
-.title > button {
-    align-self: flex-start;
-}
-
 .heading img {
     display: block;
-    max-width: 100%;
     height: auto;
 }
 
-.main {
-    flex: 1;
+.info {
+    margin-bottom: 48px;
 }
 
 .info h2 {
     text-align: center;
-    margin: 24px 0;
+    margin: 30px 0;
     font-size: 36px;
     font-weight: 900;
     color: #1F2937;
@@ -120,47 +107,51 @@ button {
 }
 
 .panel {
-    display: flex;
-    flex-direction: column;
-    width: 150px;
+    width: 225px;
     text-align: center;
     margin-bottom: 72px;
 }
 
 .panel-image {
     width: 100%;
-    height: 150px;
-    border: 5px solid black;
+    height: 225px;
+    border: 5px solid #3882F6;
     border-radius: 15px;
+    margin-bottom: 5px;
 }
 
 .quote {
-    margin: 10px 0;
-    padding: 50px 300px; 
     font-size: 36px;
     font-style: italic;
     color: #1F2937;
     background-color: #E5E7EB;
+    padding: 80px 300px; 
     margin-bottom: 80px;
 }
 
-.quote > p {
-    margin-top: 36px;
-    text-align: right;
+.quote blockquote {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.quoted {
     font-style: normal;
     font-size: 24px;
+    font-weight: bold;
+    text-align: right;
+    margin-top: 36px;
 }
 
 .action {
-    border-radius: 8px;
-    margin-bottom: 80px;
-    padding: 32px 96px;
     display: flex;
     justify-content: space-between;
     background-color: #3882F6;
+    padding: 32px 96px;
+    border-radius: 8px;
+    margin-bottom: 80px;
 }
 
-.action > .text > .bold {
+.action .bold {
     font-weight: bold;
 }
 
