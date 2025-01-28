@@ -9,33 +9,53 @@
 body {
     min-height: 100vh;
     font-family: Roboto, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 
 button {
-    padding: 8px 16px;
+    padding: 8px 32px;
     border-radius: 5px;
+    background-color: #3882F6;
+    border: none;
 }
 
-.container {
-    width: 80%;
-    height: 100%;
-    margin: 0 auto;
-    padding: 0 200px;
+.main-text {
+    color: #F9FAF8;
+}
 
-    display: flex;
-    flex-direction: column;
+.secondary-text {
+    color: #E5E7EB;
+}
 
-    border: 2px solid black;
+.header,
+.footer {
+    background-color: #1F2937;
 }
 
 .header {
+    padding-bottom: 36px;
+}
+
+.navbar,
+.heading,
+.action {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+.logo {
+    font-size: 24px;
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     padding: 12px 0;
-    border: 2px solid black;
 }
 
 .navbar > ul {
@@ -44,15 +64,16 @@ button {
     gap: 24px;
 }
 
-.navbar > li > a {
+.navbar a {
     text-decoration: none;
+    font-size: 18px;
 }
 
 .heading {
     display: flex;
     /* for the image to schrink --> stretch is the default */
     align-items: flex-start;
-    gap: 36px;
+    gap: 50px;
 }
 
 .title {
@@ -61,7 +82,8 @@ button {
 }
 
 .title > h1 {
-    font-size: 36px;
+    font-size: 48px;
+    font-weight: 900;
     margin-bottom: 12px;
 }
 
@@ -81,12 +103,14 @@ button {
 
 .main {
     flex: 1;
-    border: 2px solid black;
 }
 
-.main h2 {
+.info h2 {
     text-align: center;
     margin: 24px 0;
+    font-size: 36px;
+    font-weight: 900;
+    color: #1F2937;
 }
 
 .panels {
@@ -100,6 +124,7 @@ button {
     flex-direction: column;
     width: 150px;
     text-align: center;
+    margin-bottom: 72px;
 }
 
 .panel-image {
@@ -110,25 +135,37 @@ button {
 }
 
 .quote {
-    font-size: 21px;
     margin: 10px 0;
-    padding: 50px 180px; 
+    padding: 50px 300px; 
+    font-size: 36px;
+    font-style: italic;
+    color: #1F2937;
+    background-color: #E5E7EB;
+    margin-bottom: 80px;
 }
 
 .quote > p {
+    margin-top: 36px;
     text-align: right;
-    margin-top: 18px;
+    font-style: normal;
+    font-size: 24px;
 }
 
 .action {
+    border-radius: 8px;
+    margin-bottom: 80px;
+    padding: 32px 96px;
     display: flex;
     justify-content: space-between;
-    padding: 30px 100px;
-    border: 2px solid black;
+    background-color: #3882F6;
 }
 
-.action > .text {
+.action > .text > .bold {
+    font-weight: bold;
+}
 
+.action > button {
+    border: 1px solid #F9FAF8;
 }
 
 .footer {
